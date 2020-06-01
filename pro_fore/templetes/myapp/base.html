@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="{% url 'index' %}">home</a></li>
+      <li><a href="{% url 'myapp:other' %}">other</a></li>
+      <li><a href="{% url 'admin:index' %}">admin</a></li>
+    </ul>
+    {% block cont %}
+    {% endblock %}
+  </body>
+</html>

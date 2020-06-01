@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html'%}
+{% block cont%}
+<h1>this is index</h1>
+{{ text|cut:'hello' }}
+{{ number|add:'111' }}
+{% endblock %}
